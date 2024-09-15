@@ -12,10 +12,10 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
-    Weatherservice()
-        .get_Location()
-        .then((value) => print(value))
-        .catchError((error) => print(error));
+    getWeatherData();
+    //.get_Location()
+    //.then((value) => print(value))
+    //.catchError((error) => print(error));
 
     super.initState();
   }
